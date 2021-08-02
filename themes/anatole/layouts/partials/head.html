@@ -1,0 +1,98 @@
+<head>
+    <title> {{.Site.Params.author}}{{ with .Title }} | {{ . }}{{ end }} </title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    {{- hugo.Generator -}}
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{- if .Site.Params.googleSiteVerify }}
+    <meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerify }}">
+    {{- end -}}
+
+    <!-- CSS -->
+    
+    {{ if eq .Site.Language.LanguageDirection "rtl"}}
+    {{ $templateStyle := resources.Get "css/style.rtl.css" }}
+    {{ $style := $templateStyle  | resources.ExecuteAsTemplate "css/main.css" . | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet"
+          href="{{ $style.RelPermalink }}"
+          type="text/css">
+    {{else}}
+    {{ $templateStyle := resources.Get "css/style.css" }}
+    {{ $style := $templateStyle  | resources.ExecuteAsTemplate "css/main.css" . | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet"
+        href="{{ $style.RelPermalink }}"
+        type="text/css">
+    {{end}}
+    {{ $markupHighlightStyle := resources.Get "css/markupHighlight.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet"
+        href="{{ $markupHighlightStyle.RelPermalink }}"
+        type="text/css">
+    {{ range .Site.Params.customCss }}
+        {{ $minstyles := resources.Get . }}
+        {{ $styles := $minstyles | resources.Minify | resources.Fingerprint }}
+        <link rel="stylesheet"
+        href="{{ $styles.RelPermalink }}"
+        media="screen" />
+    {{ end }}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}favicon.ico" type="image/x-icon">
+
+    <link rel="canonical" href="{{ .RelPermalink }}">
+
+    <!-- RSS -->
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
+    <!-- JavaScript -->
+    <script async defer data-domain="markozivanovic.com" src="https://analytics.chaospigeon.com/js/plausible.js"></script>
+    {{ $anatoleHeader := resources.Get "js/anatole-header.js" }}
+    {{ $secureHeaderJS := $anatoleHeader |  resources.Minify | resources.Fingerprint }}
+    <script type="text/javascript"
+            src="{{ $secureHeaderJS.RelPermalink }}"
+            ></script>
+
+
+    {{ if not .Site.Params.disableThemeSwitcher }}
+        {{ $anatoleThemeSwitcher := resources.Get "js/anatole-theme-switcher.js" }}
+        {{ $secureThemeSwitcherJS := $anatoleThemeSwitcher |  resources.Minify | resources.Fingerprint }}
+        <script type="text/javascript"
+                src="{{ $secureThemeSwitcherJS.RelPermalink }}"
+                ></script>
+    {{ end }}
+
+    {{- $js := "" -}}
+    {{- range .Site.Params.customJs -}}
+        {{- if or (in . "http://") (in . "https://") -}}
+            <script src="{{ . | relURL }}"></script>
+        {{- else -}}
+            {{- $customJS := resources.Get . -}}
+            {{- if $customJS -}}
+                {{- if eq $js "" -}}
+                    {{- $js = $customJS -}}
+                {{- else -}}
+                    {{- $js = slice $js $customJS | resources.Concat "js/custom.js" -}}
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+
+    {{- if ne $js "" -}}
+    {{- $secureJS := $js |  resources.Minify | resources.Fingerprint -}}
+    <script type="text/javascript"
+            src="{{ $secureJS.RelPermalink }}"
+            ></script>
+    {{- end -}}
+
+    <!-- Twitter Cards -->
+    {{ template "_internal/twitter_cards.html" . }}
+
+    <!-- Open Graph -->
+    {{ template "_internal/opengraph.html" . }}
+    
+</head>

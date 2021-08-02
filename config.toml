@@ -1,0 +1,71 @@
+
+theme = "anatole"
+summarylength = 10
+baseURL = "https://markozivanovic.com"
+enableEmoji = true
+enableRobotsTXT = true
+languageCode = "en"
+[permalinks]
+  post = "/:title"
+[params]
+  profilePicture = "images/profile.jpeg"
+  customCss = ["css/custom.css"]
+  title = "Marko Živanović"
+  description = "Musings on the software world and beyond"
+  author="Marko Živanović"
+  DefaultContentLanguage = "en"
+  disableThemeSwitcher=true
+  doNotLoadAnimations=true
+  images=["images/cookie_monster.jpg"]
+  pygmentsUseClasses = true
+  pygmentsCodeFences = true
+  pygmentsCodefencesGuessSyntax = true
+
+
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    identifier = "home"
+    weight = 100
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    weight = 200
+    identifier = "posts"
+    url = "/post/"
+  [[menu.main]]
+    name = "Howto"
+    weight = 200
+    identifier = "howto"
+    url = "/howto/"
+#  [[menu.main]]
+#    name = "#BuildInPublic"
+#    weight = 200
+#    identifier = "buildinpublic"
+#    url = "/buildinpublic/"
+  [[menu.main]]
+    name = "About"
+    weight = 300
+    identifier = "about"
+    url = "/about/"
+
+[[params.socialIcons]]
+icon = "icon-linkedin-squared icon-2x"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/m4rkoziv4novic/"
+
+[[params.socialIcons]]
+icon = "icon-twitter icon-2x"
+title = "Twitter"
+url = "https://twitter.com/markozivan0vic"
+
+[[params.socialIcons]]
+icon = "icon-mail-alt icon-2x"
+title = "e-mail"
+url = "mailto:marko@markozivanovic.com"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

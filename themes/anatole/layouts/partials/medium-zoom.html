@@ -1,0 +1,8 @@
+{{ $enableMediumZoom := default true (.Site.Params.enableMediumZoom) }}
+{{- if eq $enableMediumZoom true -}}
+{{ $js := resources.Get "js/medium-zoom.js" }}
+{{ $secureJS := $js |  resources.Minify | resources.Fingerprint }}
+<script type="text/javascript"
+        src="{{ $secureJS.RelPermalink }}"
+        ></script>
+{{- end -}}
