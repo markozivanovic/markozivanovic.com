@@ -61,6 +61,11 @@ title = "Twitter"
 url = "https://twitter.com/markozivan0vic"
 
 [[params.socialIcons]]
+icon = "icon-github-circled icon-2x"
+title = "GitHub"
+url = "https://github.com/markozivanovic"
+
+[[params.socialIcons]]
 icon = "icon-mail-alt icon-2x"
 title = "e-mail"
 url = "mailto:marko@markozivanovic.com"
