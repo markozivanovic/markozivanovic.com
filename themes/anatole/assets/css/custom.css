@@ -108,6 +108,7 @@ p, .post .post-content ol, .post .post-content ul, .list-with-title {
 
 .description p {
     margin-top: 0px;
+    font-size: 16px;
 }
 
 .sidebar .logo-title .title h3 {
@@ -215,6 +216,9 @@ span.text-disclaimer {
 }
 
 .projects {
-    margin-top: -20px;
-    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+.sidebar .logo-title .title a {
+    font-size: 1.9rem;
 }
