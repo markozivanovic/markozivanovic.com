@@ -39,11 +39,11 @@ languageCode = "en"
     weight = 200
     identifier = "howto"
     url = "/howto/"
-#  [[menu.main]]
-#    name = "#BuildInPublic"
-#    weight = 200
-#    identifier = "buildinpublic"
-#    url = "/buildinpublic/"
+  [[menu.main]]
+    name = "Shorts"
+    weight = 200
+    identifier = "shorts"
+    url = "/shorts/"
   [[menu.main]]
     name = "About"
     weight = 300
