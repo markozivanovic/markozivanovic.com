@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" data-theme=""><head>
+    <title> Marko Živanović | Migrating from WordPress to Hugo </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.86.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Marko Zivanovic is a programmer, technologist, and one hell of a guy. He loves to learn new programming languages and enjoys long walks on the beach.">
+    
+    
+    
+    
+    <link rel="stylesheet"
+        href="/css/main.min.23961b6787fbb1d82de341ec1e4e719424a6ad5e5e1c8b697833a575d5f13f7f.css"
+        type="text/css">
+    
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        type="text/css">
+    
+        
+        
+        <link rel="stylesheet"
+        href="/css/custom.min.0a62328831d51c46df0ddb89566c039e70474b5ea26b055fb0ab6d4e81883117.css"
+        media="screen" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="canonical" href="/migrating-from-wordpress-to-hugo/">
+
+    
+    
+    <script async defer data-domain="markozivanovic.com" src="https://analytics.chaospigeon.com/js/plausible.js"></script>
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            ></script>
+
+
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://markozivanovic.com/images/migrate_wordpress_hugo.png"/>
+
+<meta name="twitter:title" content="Migrating from WordPress to Hugo"/>
+<meta name="twitter:description" content="For some time now, I have wanted to set up a blog using a static site generator."/>
+
+
+    
+    <meta property="og:title" content="Migrating from WordPress to Hugo" />
+<meta property="og:description" content="For some time now, I have wanted to set up a blog using a static site generator." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://markozivanovic.com/migrating-from-wordpress-to-hugo/" /><meta property="og:image" content="https://markozivanovic.com/images/migrate_wordpress_hugo.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-06-27T00:00:00+00:00" /><meta property="og:site_name" content="Marko Živanović" />
+
+
+    
+</head>
+<body><div class="sidebar . ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/profile.jpeg" alt="profile picture">
+            <h3 title=""><a href="/">Marko Živanović</a></h3>
+            <div class="description">
+                <p>Musings on the software world and beyond</p>
+            </div>
+            <div class="projects">
+                <li><a href="https://tooloodr.com" target="_blank">tooloodr.com</a>★</li>
+                <li><a href="https://theprogrammersoath.com" target="_blank">theprogrammersoath.com</a>★</li>
+                <li><a href="https://chaospigeon.com" target="_blank">chaospigeon.com</a></li>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://www.linkedin.com/in/m4rkoziv4novic/" rel="me" aria-label="Linkedin">
+                    <i class="icon-linkedin-squared icon-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://twitter.com/markozivan0vic" rel="me" aria-label="Twitter">
+                    <i class="icon-twitter icon-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/markozivanovic" rel="me" aria-label="GitHub">
+                    <i class="icon-github-circled icon-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:marko@markozivanovic.com" rel="me" aria-label="e-mail">
+                    <i class="icon-mail-alt icon-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy;  Marko Živanović 2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  . ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/howto/"
+                        
+                   title="">Howto</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/shorts/"
+                        
+                   title="">Shorts</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">About</a></li>
+        
+        
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  . ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>Migrating from WordPress to Hugo</h3>
+                
+                    <div class="info">
+                        <i class="icon-calendar-inv"></i>
+                        <span class="date"> Sun, Jun 27, 2021 
+                                           </span>
+                        <i class="icon-stopwatch"></i>
+                        <span class="reading-time">7-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>For some time now, I have wanted to set up a blog using a static site generator. There was no real reason behind that wanting. It was just the plain old curiosity combined with the drive to learn new things.</p>
+<p>I&rsquo;m not sure when exactly the trend began, but I remember articles named &ldquo;I switched my blog to [<a href="https://gohugo.io/" target="_blank">Hugo</a>/<a href="https://jekyllrb.com/" target="_blank">Jekyll</a>] &quot; started popping up across the interweb frequently some two years ago.</p>
+<p>It wasn&rsquo;t until I had to write a documentation page for one of my <a href="https://www.tooloodr.com/documentation/index.html" target="_blank">side projects</a> that I started to think seriously about SSGs.</p>
+<p>I ended up writing documentation manually in HTML at that time. I just wanted to push it out ASAP, and I rejected the thought of reading the documentation of any SSG, even for measly 10 minutes.</p>
+<p>Even though I didn&rsquo;t use SSG for that task, it was at that moment that I decided I will most definitely use a static site generator for my web properties that are existing purely for displaying static content. Hell, <a href="/images/poweruser_unicorn.jpeg">I&rsquo;m a developer</a>, no excuses not to.</p>
+<h2 id="starting-with-wordpress">Starting with WordPress</h2>
+<p>When I decided to write <a href="/dont-ignore-rejection-emails">my first blog post</a> last year in April, I wrote it in vim. It was sitting on my disk for two days because I had no idea what to use to publish it online.</p>
+<p>SSGs were popular, but the decision fell on WordPress because I have installed it many, many times before. It was familiar, and I felt comfortable with it. I knew the plugin ecosystem, and I knew I could connect to the WP dashboard from anywhere and type out a post inside its WYSIWYG editor and publish it - without having to think about anything else.</p>
+<p>I connected to the VPS I rent, installed PHP, MySQL, and Nginx. I extracted the WP zip and went through few screens of the installation procedure. After that, I took the freely available <a href="https://andersnoren.se/teman/lovecraft-wordpress-theme/" target="_blank">theme</a> and pasted my blog post into the WP editor. That was all I had to do - 10 minutes from start to finish. Easy!</p>
+<p>If I wasn&rsquo;t obsessed with optimizing things that don&rsquo;t matter much, and I didn&rsquo;t consider it as a fun way to spend Saturday evenings, I would leave it at that. I didn&rsquo;t because I am obsessed with things some would consider stupid - like optimizing a blog that holds a dozen blog posts.</p>
+<h2 id="things-that-started-to-frustrate-me">Things that started to frustrate me</h2>
+<p>When I wrote the <a href="/screw-it-ill-host-it-myself">first blog post that got some attention</a>, hundreds of people started commenting on it. There were some positive comments and some comments that were not so nice.  I didn&rsquo;t care about any of them but one. It was the comment that said my blog was slow.</p>
+<p>I was thinking - here I am, a guy that talks about optimizing stuff all the time, and my website consisting only of text is slow AF. And it was. There was no excuse. I was making people download a megabyte of data only to display a few lousy paragraphs of text.</p>
+<p>Just for the front page where the last ten blog posts were listed, your browser had to:</p>
+<ul>
+<li>download <strong>1.04 MB</strong> of data</li>
+<li>make <strong>38</strong> requests</li>
+<li>wait for <strong>1.56</strong> seconds</li>
+</ul>
+<p>And that was after an <a href="https://wordpress.org/plugins/hummingbird-performance/" target="_blank">optimization plugin for WordPress</a> combined and minimized the assets and cached what it could. <strong>Awful!</strong> The only thing I could do that was worse would be not displaying the text to people that have Javascript disabled. I made sure that wasn&rsquo;t the case. I don&rsquo;t want to end up in hell.</p>
+<p>Now, to be clear, this is not a WordPress problem. It was my problem. If I had built the theme from scratch, I would have more control. In that case, I could&rsquo;ve been more careful about the assets I was linking.</p>
+<p>I could&rsquo;ve had a better caching mechanism and maybe a CDN in front. That would make the experience better for the reader. It would only mask the underlying problem, though. I&rsquo;m serving only text - why the fuck do I need so many resources?</p>
+<h2 id="hello-hugo">Hello Hugo</h2>
+<p>It boiled down to the decision between Hugo and Jekyll in the end. I forgot why I chose the former. Maybe it was someone&rsquo;s tweet or a blog post I read.</p>
+<p>I posted the following tweet on May 17th:</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just created a new repo with Hugo, I think I&#39;ll slowly start migrating WP to it.</p>&mdash; Marko Zivanovic (@markozivan0vic) <a href="https://twitter.com/markozivan0vic/status/1394355058586923010?ref_src=twsrc%5Etfw">May 17, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Note: <a href="https://gohugo.io/content-management/shortcodes/#tweet" target="_blank">tweet shortcode</a> that displays this tweet comes with Hugo</p>
+<p>Initially, I thought I&rsquo;ll need to spend at least a day going through the documentation. I was mistaken. The documentation is well written, and almost everything has an example.</p>
+<p>In the end, I didn&rsquo;t even use any of the <a href="https://gohugo.io/tools/migrations/" target="_blank">WordPress migration tools</a>. I don&rsquo;t have many posts (not yet!), so I decided to convert them manually to markdown files. Also, it gave me the chance to re-read the content I wrote and check if I can find any typos to fix.</p>
+<p>I love writing in markdown. These are two tweets I wrote about it recently:</p>
+<p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just want to write everything in markdown from now on. Switching between different WYSIWYG editors, then wikicode, then Writer/Word is a bit annoying. <a href="https://twitter.com/hashtag/markdown?src=hash&amp;ref_src=twsrc%5Etfw">#markdown</a> rules!</p>&mdash; Marko Zivanovic (@markozivan0vic) <a href="https://twitter.com/markozivan0vic/status/1394350837049200641?ref_src=twsrc%5Etfw">May 17, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">When I&#39;m reading <a href="https://twitter.com/hashtag/markdown?src=hash&amp;ref_src=twsrc%5Etfw">#markdown</a> code, I see the <a href="https://twitter.com/hashtag/HTML?src=hash&amp;ref_src=twsrc%5Etfw">#HTML</a> formatted output in my head. And then I start to think I&#39;m like Neo, seeing the world instead of that Matrix digital rain. <br><br>Then I realize I&#39;m spending too much time sitting in front of the computer and I need to go outside.</p>&mdash; Marko Zivanovic (@markozivan0vic) <a href="https://twitter.com/markozivan0vic/status/1409026581952147456?ref_src=twsrc%5Etfw">June 27, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+<p>If documentation is easy to follow, you may ask <strong>why the hell it took me over a month to finish the migration</strong>, because I&rsquo;m posting this on Jun 27th and I started migrating the blog on May 17th.</p>
+<p>It was mostly being occupied with other things. I planned to finish this in two months, putting in an hour or two per week into it. I&rsquo;ve been investing more of my off time into writing - something I will do more of this year (and now I have a faster blog!).</p>
+<p>In total, I spent between ten and twelve hours on migration. It was mostly me changing some CSS settings and reversing them. I don&rsquo;t have an eye for design, and it&rsquo;s always been hard for me.</p>
+<p>I started with a theme I thought looks cool - <a href="https://themes.gohugo.io/anatole/" target="_blank">Anatole</a>, and then I added my custom styling on top of it. In the process, I played with the layouts and learned most of the insides of Hugo and its theming. It will come in handy in the future, I have no doubt about that.</p>
+<p>Regarding the process of writing a post and publishing it on the blog, it&rsquo;s as simple as it can be</p>
+<ol>
+<li>Write a blog post in markdown</li>
+<li>Run <strong>hugo</strong> to build it</li>
+<li>SCP to the server</li>
+</ol>
+<p>When I say <strong>simple</strong>, I&rsquo;m saying it&rsquo;s simple and easy for me - a person with a programming background that feels comfortable with markdown and command line.</p>
+<p>I&rsquo;m not trying to say that this is something that everyone should do. I believe that WordPress provides a great platform for aspiring bloggers that don&rsquo;t want to or don&rsquo;t know how to go through this process.</p>
+<h2 id="just-give-me-the-stats">Just give me the stats</h2>
+<p>Here are the stats for the website after the migration. I can say it&rsquo;s much better now. There is still room for improvement, of course, but I&rsquo;ll refrain from going fully mad and trying to cut down more stuff. I&rsquo;m happy with it for now.</p>
+<p>To show you the front page of my blog, your browser now needs to:</p>
+<ul>
+<li>download <strong>77.06kB</strong> of data (<span style="color: green"> -92.76%</span> size)</li>
+<li>make <strong>12</strong> requests (<span style="color: green"> -68%</span> requests)</li>
+<li>wait for <strong>467</strong> miliseconds (<span style="color: green"> -70%</span> time)</li>
+</ul>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/self-hosting/">self-hosting</a><a class="category" href="/categories/blog/">blog</a></span>
+                <span class="separator"><a class="tag" href="/tags/wordpress/">wordpress</a><a class="tag" href="/tags/hugo/">hugo</a><a class="tag" href="/tags/migration/">migration</a></span>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.83cb1dd5fea8d42d87d1e601a07faa73089ad0ef9ccfe5daf6041289ebcc4e46.js"
+        ></script></body>
+
+</html>
