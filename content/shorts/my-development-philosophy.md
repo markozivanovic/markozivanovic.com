@@ -10,7 +10,7 @@ categories = [
 ]
 +++
 
-I was reading a book by a Ashley Davis on bootstrapping microservices*, and at the beginning of the book, the author sums up his philosophy of development as:
+I was reading a book by Ashley Davis on bootstrapping microservices*, and at the beginning of the book, the author sums up his philosophy of development as:
 
 - Iterate
 - Keep it working
