@@ -6,7 +6,18 @@
     <description>Recent content in shorts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://markozivanovic.com/categories/shorts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://markozivanovic.com/categories/shorts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My development philosophy</title>
+      <link>https://markozivanovic.com/shorts/my-development-philosophy/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://markozivanovic.com/shorts/my-development-philosophy/</guid>
+      
+        <description>I was reading a book by a Ashley Davis on bootstrapping microservices*, and at the beginning of the book, the author sums up his philosophy of development as:</description>
+      
+    </item>
+    
     <item>
       <title>The &#34;If I can do it, so can you&#34; bullshit</title>
       <link>https://markozivanovic.com/shorts/the-if-i-can-do-it-so-can-you-bullshit/</link>
