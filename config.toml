@@ -16,10 +16,10 @@ languageCode = "en"
   DefaultContentLanguage = "en"
   disableThemeSwitcher=true
   doNotLoadAnimations=true
-  images=["images/cookie_monster.jpg"]
   pygmentsUseClasses = true
   pygmentsCodeFences = true
   pygmentsCodefencesGuessSyntax = true
+  images = ["images/marko_zivanovic.png"]
 
 
 
