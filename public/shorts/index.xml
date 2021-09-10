@@ -6,7 +6,18 @@
     <description>Recent content in Shorts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://markozivanovic.com/shorts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://markozivanovic.com/shorts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>It&#39;s just a (hacker news) bubble you&#39;re living in</title>
+      <link>https://markozivanovic.com/shorts/its-just-a-bubble/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://markozivanovic.com/shorts/its-just-a-bubble/</guid>
+      
+        <description>If you think that the average developer salary is 250k + stock options, you&amp;rsquo;re reading too much Hacker News.</description>
+      
+    </item>
+    
     <item>
       <title>My development philosophy</title>
       <link>https://markozivanovic.com/shorts/my-development-philosophy/</link>
