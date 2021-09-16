@@ -6,18 +6,7 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0200</lastBuildDate><atom:link href="https://markozivanovic.com/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Dangers of Documentation</title>
-      <link>https://markozivanovic.com/the-dangers-of-documentation/</link>
-      <pubDate>Wed, 15 Sep 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://markozivanovic.com/the-dangers-of-documentation/</guid>
-      
-        <description>This is an excerpt from my upcoming book, The Code of War, a Machiavellian style satire set in the world of IT, based on my years of working in various tech companies, meeting a plethora of interesting but questionable characters along the way.</description>
-      
-    </item>
-    
+    <lastBuildDate>Sun, 27 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://markozivanovic.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrating from WordPress to Hugo</title>
       <link>https://markozivanovic.com/migrating-from-wordpress-to-hugo/</link>

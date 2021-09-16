@@ -20,16 +20,16 @@
     <loc>https://markozivanovic.com/tags/excerpt/</loc>
     <lastmod>2021-09-15T00:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://markozivanovic.com/post/</loc>
+    <loc>https://markozivanovic.com/tags/satire/</loc>
     <lastmod>2021-09-15T00:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://markozivanovic.com/tags/satire/</loc>
+    <loc>https://markozivanovic.com/shorts/</loc>
     <lastmod>2021-09-15T00:00:00+02:00</lastmod>
   </url><url>
     <loc>https://markozivanovic.com/tags/</loc>
     <lastmod>2021-09-15T00:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://markozivanovic.com/the-dangers-of-documentation/</loc>
+    <loc>https://markozivanovic.com/shorts/the-dangers-of-documentation/</loc>
     <lastmod>2021-09-15T00:00:00+02:00</lastmod>
   </url><url>
     <loc>https://markozivanovic.com/tags/development/</loc>
@@ -39,9 +39,6 @@
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://markozivanovic.com/tags/philosophy/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markozivanovic.com/shorts/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://markozivanovic.com/categories/shorts/</loc>
@@ -87,6 +84,9 @@
     <lastmod>2021-06-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://markozivanovic.com/tags/migration/</loc>
+    <lastmod>2021-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://markozivanovic.com/post/</loc>
     <lastmod>2021-06-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://markozivanovic.com/categories/self-hosting/</loc>
