@@ -68,7 +68,6 @@ p, .post .post-content ol, .post .post-content ul, .list-with-title {
 .post .post-title h3 {
     text-transform: none;
     font-size: 26px;
-    color: #000;
 }
 
 .post .post-content h2 {
@@ -79,7 +78,6 @@ p, .post .post-content ol, .post .post-content ul, .list-with-title {
 
 .list-with-title .listing-title {
     font-size: 26px;
-    color: #000;
 }
 
 .category {
@@ -146,10 +144,6 @@ a:hover, a:active {
     font-size: 17px;
 }
 
-.post .post-title a {
-    color: #000;
-}
-
 .page-top {
     height: 74px;
 }
@@ -199,10 +193,6 @@ span.text-disclaimer {
 
 .list-with-title .listing .listing-post a:hover {
     color: #ca2017;
-}
-
-.list-with-title .listing .listing-post a {
-    color: #272822;
 }
 
 .projects li a {
