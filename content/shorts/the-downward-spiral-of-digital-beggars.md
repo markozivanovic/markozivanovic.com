@@ -56,5 +56,5 @@ Note: I didn't go through my entire public online history, but I've asked for re
 </span>
 <br /><br />
 <span class="text-disclaimer">
-I believe there's a fine line between asking your friends to help you make something you care about more visible, and begging for likes and followers when it's only purpose is embellishing the social stats.
+I believe there's a fine line between asking your friends to help you make something you care about more visible, and begging for likes and followers when its only purpose is embellishing the social stats.
 </span>
