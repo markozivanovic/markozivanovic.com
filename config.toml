@@ -8,7 +8,7 @@ languageCode = "en"
 [permalinks]
   post = "/:title"
 [params]
-  profilePicture = "images/profile.jpeg"
+  profilePicture = "images/profile.jpg"
   customCss = ["css/custom.css"]
   title = "Marko Živanović"
   description = "Musings on the software world and beyond"
