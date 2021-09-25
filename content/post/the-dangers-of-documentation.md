@@ -1,7 +1,7 @@
 +++
 author = "Marko Zivanovic"
-title = "The Dangers of Documentation"
-date = 2021-09-15
+title = "The dangers of documentation"
+date = 2021-09-04
 images = ["images/dangers_documentation.jpg"]
 tags = [
   "excerpt",

@@ -1,7 +1,7 @@
 +++
 author = "Marko Zivanovic"
 title = "The downward spiral of digital beggars"
-date = "2021-09-24"
+date = "2021-09-15"
 tags = [
     "digital", "beggars"
 ]

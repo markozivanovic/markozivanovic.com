@@ -1,7 +1,7 @@
 +++
 author = "Marko Zivanovic"
 title = "My development philosophy"
-date = "2021-08-18"
+date = "2021-09-23"
 tags = [
     "development", "philosophy"
 ]

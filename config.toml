@@ -40,11 +40,6 @@ languageCode = "en"
     identifier = "howto"
     url = "/howto/"
   [[menu.main]]
-    name = "Shorts"
-    weight = 200
-    identifier = "shorts"
-    url = "/shorts/"
-  [[menu.main]]
     name = "About"
     weight = 300
     identifier = "about"
