@@ -244,3 +244,13 @@ li > p {
     margin: 15px 30px;
 }
 
+.pagination .page-item a {
+    color: #fff;
+}
+
+.pagination .page-item {
+    background-color: #ca2017;
+    padding: 4px 8px;
+    color: #fff;
+}
+
