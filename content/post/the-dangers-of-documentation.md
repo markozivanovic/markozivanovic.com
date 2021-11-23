@@ -16,11 +16,11 @@ categories = [
 <hr />
 
 <span class="text-disclaimer">
-This is an <b>excerpt from my upcoming book, <a href="https://codeofwar.xyz">The Code of War</a></b>, a Machiavellian style satire set in the world of IT, based on my years of working in various tech companies, meeting a plethora of interesting but questionable characters along the way. 
+This is an <b>excerpt from my upcoming book, <a href="https://codeofwar.xyz">The Code of War</a></b>, a Machiavellian style satire, written in a style of a self-help book set in the world of IT. It's based on my years of working in various tech companies, meeting a plethora of interesting but questionable characters along the way.
 </span>
 <br /><br />
 <span class="text-disclaimer">
-<b>You can pre-order it today, at <a href="https://codeofwar.xyz">https://codeofwar.xyz</a></b>
+<b>You can order it today, at <a href="https://codeofwar.xyz">https://codeofwar.xyz</a></b>
 </span>
 
 <hr />
@@ -56,11 +56,11 @@ Deadlines will come, as they always do, and you’ll already have spent all of y
 <hr />
 
 <span class="text-disclaimer">
-This is an <b>excerpt from my upcoming book, <a href="https://codeofwar.xyz">The Code of War</a></b>, a Machiavellian style satire set in the world of IT, based on my years of working in various tech companies, meeting a plethora of interesting but questionable characters along the way.
+This is an <b>excerpt from my upcoming book, <a href="https://codeofwar.xyz">The Code of War</a></b>, a Machiavellian style satire, written in a style of a self-help book set in the world of IT. It's based on my years of working in various tech companies, meeting a plethora of interesting but questionable characters along the way.
 </span>
 <br /><br />
 <span class="text-disclaimer">
-<b>You can pre-order it today, at <a href="https://codeofwar.xyz">https://codeofwar.xyz</a></b>
+<b>You can order it today, at <a href="https://codeofwar.xyz">https://codeofwar.xyz</a></b>
 </span>
 
 <hr />
