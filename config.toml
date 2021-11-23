@@ -44,6 +44,11 @@ languageCode = "en"
     weight = 300
     identifier = "about"
     url = "/about/"
+  [[menu.main]]
+    name = "The Code of War"
+    weight = 300
+    identifier = "tcow"
+    url = "/tcow/"
 
 [[params.socialIcons]]
 icon = "icon-linkedin-squared icon-2x"
