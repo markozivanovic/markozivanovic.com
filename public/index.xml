@@ -6,7 +6,18 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://markozivanovic.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://markozivanovic.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deadlines should be impossible</title>
+      <link>https://markozivanovic.com/tcow/deadlines-should-be-impossible/</link>
+      <pubDate>Tue, 23 Nov 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://markozivanovic.com/tcow/deadlines-should-be-impossible/</guid>
+      
+        <description>This is an excerpt from my upcoming book, The Code of War, a Machiavellian style satire written in a style of a self-help book set in the world of IT.</description>
+      
+    </item>
+    
     <item>
       <title>My development philosophy</title>
       <link>https://markozivanovic.com/my-development-philosophy/</link>
@@ -31,12 +42,12 @@
     
     <item>
       <title>The dangers of documentation</title>
-      <link>https://markozivanovic.com/the-dangers-of-documentation/</link>
+      <link>https://markozivanovic.com/tcow/the-dangers-of-documentation/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0200</pubDate>
       
-      <guid>https://markozivanovic.com/the-dangers-of-documentation/</guid>
+      <guid>https://markozivanovic.com/tcow/the-dangers-of-documentation/</guid>
       
-        <description>This is an excerpt from my upcoming book, The Code of War, a Machiavellian style satire set in the world of IT, based on my years of working in various tech companies, meeting a plethora of interesting but questionable characters along the way.</description>
+        <description>This is an excerpt from my upcoming book, The Code of War, a Machiavellian style satire written in a style of a self-help book set in the world of IT.</description>
       
     </item>
     

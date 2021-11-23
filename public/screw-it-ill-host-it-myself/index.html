@@ -3,19 +3,19 @@
     <title> Marko Živanović | Screw it, I’ll host it myself </title>
 
     
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.86.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.68.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Marko Zivanovic is a programmer, technologist, and one hell of a guy. He loves to learn new programming languages and enjoys long walks on the beach.">
     
     
     
     
     <link rel="stylesheet"
-        href="/css/main.min.23961b6787fbb1d82de341ec1e4e719424a6ad5e5e1c8b697833a575d5f13f7f.css"
+        href="/css/main.min.ce81834785739fa650269589d971e8b17d6f76b62257f16d4e36bf82cf0fcbd8.css"
         type="text/css">
     
     
     <link rel="stylesheet"
-        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        href="/css/markupHighlight.min.cc84ed683057cc175ddfa738ea6ba2d5c882b95cb64f50bf9be918cb3791887b.css"
         type="text/css">
     
         
@@ -28,8 +28,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
     <link rel="canonical" href="/screw-it-ill-host-it-myself/">
 
     
@@ -38,7 +41,7 @@
     
     
     <script type="text/javascript"
-            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            src="/js/anatole-header.min.d8599ee07b7d3f11bafbac30657ccc591e8d7fd36a9f580cd4c09e24e0e4a971.js"
             ></script>
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://markozivanovic.com/images/mydataflow.png"/>
@@ -51,10 +54,10 @@
     <meta property="og:title" content="Screw it, I’ll host it myself" />
 <meta property="og:description" content="It’s all fun and games until someone loses an eye. Likewise, it’s all fun and games until someone loses access to their private and/or business data because they trusted it to someone else." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://markozivanovic.com/screw-it-ill-host-it-myself/" /><meta property="og:image" content="https://markozivanovic.com/images/mydataflow.png" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://markozivanovic.com/screw-it-ill-host-it-myself/" />
+<meta property="og:image" content="https://markozivanovic.com/images/mydataflow.png" />
 <meta property="article:published_time" content="2021-04-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-04-07T00:00:00+00:00" /><meta property="og:site_name" content="Marko Živanović" />
-
 
     
 </head>
@@ -139,7 +142,13 @@
                         
                    title="">About</a></li>
         
-        <li><a style="color: #fff; background-color:#ca2017" href="https://codeofwar.xyz"><b>&nbsp;The Code of War&nbsp;</b></a></li>
+            
+            <li><a 
+                   href="/tcow/"
+                        
+                   title="">The Code of War</a></li>
+        
+        <li><a style="color: #fff; background-color:#ca2017" href="https://codeofwar.xyz"><b>&nbsp;Buy TCOW&nbsp;</b></a></li>
         
         
             <li class="theme-switch-item">
@@ -190,8 +199,9 @@ I’m aware most of the people are not <a href="/images/poweruser_unicorn.jpeg">
 <h2 id="whats-my-setup">What’s my setup?</h2>
 <p>I created a simple diagram to roughly show how my personal setup works. Before you say anything – I’m aware that there’s a group of people that wouldn’t consider my self-hosting as pure self-hosting. I’m using <a href="https://www.vultr.com/?ref=8305838" target="_blank">Vultr</a>* to host my web-facing applications and not a server in my house. Unfortunately, the current situation doesn’t allow me to do that (yet).</p>
 <p>So, here’s the diagram. The detailed explanation continues below.</p>
-<figure><img src="/images/mydataflow.png"
-         alt="diagram of my self-hosting setup"/>
+<figure>
+    <img src="/images/mydataflow.png"
+         alt="diagram of my self-hosting setup"/> 
 </figure>
 
 <p>I’ve separated the diagram into 4 parts – each part represents a different physical location of the data.</p>
@@ -200,8 +210,9 @@ I’m aware most of the people are not <a href="/images/poweruser_unicorn.jpeg">
 <p>I’m living in Germany, so the obvious choice was to spin up my instances in <a href="https://www.vultr.com/?ref=8305838" target="_blank">Vultr</a>‘s* data center in Frankfurt, as ping is the lowest to that center for me.</p>
 <p>Right now, I have six compute instances running there. You can see types of cloud compute instances in the picture below. It’s pretty similar to what you would get from DigitalOcean or AWS EC2.</p>
 <p>Why did I choose <a href="https://www.vultr.com/?ref=8305838" target="_blank">Vultr</a>*? They have pretty good customer service there, and I just happened to stumble on them before DigitalOcean got big and popular and AWS became the leader in the cloud computing game. Having said that, for purely private use, I wouldn’t opt for AWS even if I had to choose now. I’ll leave it at that.</p>
-<figure><img src="/images/vultr_screenshot.png"
-         alt="vultr cloud compute instances offering"/>
+<figure>
+    <img src="/images/vultr_screenshot.png"
+         alt="vultr cloud compute instances offering"/> 
 </figure>
 
 <p>The breakdown looks like this:</p>
@@ -223,8 +234,9 @@ I’m aware most of the people are not <a href="/images/poweruser_unicorn.jpeg">
 </ul>
 <p>I’m also able to stream music from Nextcloud to my phone, using <a href="https://github.com/owncloud/music" target="_blank">Nextcloud music</a>. For the client, you can use anything compatible with Ampache or Subsonic. My choice is <a href="https://f-droid.org/en/packages/com.antoniotari.reactiveampacheapp/" target="_blank">Power Ampache</a>. I’m not streaming a lot of music though. I always have 30-40 GB of MP3s on my phone that I rotate every now and then.</p>
 <p>All the data from Nextcloud is in sync with Synology at my home via CloudSync. A big plus is a nice dark theme for the web UI:</p>
-<figure><img src="/images/nextcloud_ui.png"
-         alt="nextcloud dark theme"/>
+<figure>
+    <img src="/images/nextcloud_ui.png"
+         alt="nextcloud dark theme"/> 
 </figure>
 
 <h2 id="gitea">Gitea</h2>
@@ -283,7 +295,7 @@ I’m aware most of the people are not <a href="/images/poweruser_unicorn.jpeg">
 </div>
 
 <script type="text/javascript"
-        src="/js/medium-zoom.min.83cb1dd5fea8d42d87d1e601a07faa73089ad0ef9ccfe5daf6041289ebcc4e46.js"
+        src="/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
         ></script></body>
 
 </html>
