@@ -3,12 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://markozivanovic.com/categories/book/</loc>
-    <lastmod>2021-11-23T00:00:00+01:00</lastmod>
+    <loc>https://markozivanovic.com/tags/books/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://markozivanovic.com/categories/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markozivanovic.com/tags/coding/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markozivanovic.com/categories/collections/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markozivanovic.com/tags/hacking/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markozivanovic.com/tags/movies/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markozivanovic.com/my-collection-of-fun-interesting-hacking/coding-movies-and-literature/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markozivanovic.com/post/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markozivanovic.com/tags/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://markozivanovic.com/categories/book/</loc>
     <lastmod>2021-11-23T00:00:00+01:00</lastmod>
   </url>
   
@@ -38,11 +78,6 @@
   </url>
   
   <url>
-    <loc>https://markozivanovic.com/tags/</loc>
-    <lastmod>2021-11-23T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://markozivanovic.com/tcow/</loc>
     <lastmod>2021-11-23T00:00:00+01:00</lastmod>
   </url>
@@ -59,11 +94,6 @@
   
   <url>
     <loc>https://markozivanovic.com/tags/philosophy/</loc>
-    <lastmod>2021-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://markozivanovic.com/post/</loc>
     <lastmod>2021-09-23T00:00:00+00:00</lastmod>
   </url>
   
