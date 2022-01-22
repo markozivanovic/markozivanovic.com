@@ -3,19 +3,19 @@
     <title> Marko Živanović | How to Install Plausible analytics on Ubuntu 20.10 </title>
 
     
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.68.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.92.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Marko Zivanovic is a programmer, technologist, and one hell of a guy. He loves to learn new programming languages and enjoys long walks on the beach.">
     
     
     
     
     <link rel="stylesheet"
-        href="/css/main.min.ce81834785739fa650269589d971e8b17d6f76b62257f16d4e36bf82cf0fcbd8.css"
+        href="/css/main.min.23961b6787fbb1d82de341ec1e4e719424a6ad5e5e1c8b697833a575d5f13f7f.css"
         type="text/css">
     
     
     <link rel="stylesheet"
-        href="/css/markupHighlight.min.cc84ed683057cc175ddfa738ea6ba2d5c882b95cb64f50bf9be918cb3791887b.css"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
         type="text/css">
     
         
@@ -41,7 +41,7 @@
     
     
     <script type="text/javascript"
-            src="/js/anatole-header.min.d8599ee07b7d3f11bafbac30657ccc591e8d7fd36a9f580cd4c09e24e0e4a971.js"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
             ></script>
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://markozivanovic.com/images/marko_zivanovic.png"/>
@@ -54,10 +54,10 @@
     <meta property="og:title" content="How to Install Plausible analytics on Ubuntu 20.10" />
 <meta property="og:description" content="As consumers are increasingly aware of the privacy issues on the modern web, that trend has opened up space for some interesting privacy-friendly tools to help you charge your business." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://markozivanovic.com/howto/how-to-install-plausible-analytics-on-ubuntu-20-10/" />
-<meta property="og:image" content="https://markozivanovic.com/images/marko_zivanovic.png"/>
+<meta property="og:url" content="https://markozivanovic.com/howto/how-to-install-plausible-analytics-on-ubuntu-20-10/" /><meta property="og:image" content="https://markozivanovic.com/images/marko_zivanovic.png"/><meta property="article:section" content="howto" />
 <meta property="article:published_time" content="2021-03-22T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-03-22T00:00:00+00:00" /><meta property="og:site_name" content="Marko Živanović" />
+
 
     
 </head>
@@ -105,7 +105,7 @@
         
     </ul>
     <div class="footer">
-        <div class="by_farbox">&copy;  Marko Živanović 2021 </div>
+        <div class="by_farbox">&copy;  Marko Živanović 2022 </div>
     </div>
 </div>
 <div class="main">
@@ -182,39 +182,39 @@
 </ul>
 <h2 id="installing-required-software">Installing required software</h2>
 <p>As you always should, once logged into the Ubuntu instance – update and upgrade all the packages by running:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get update -y
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get update -y
 $ sudo apt-get upgrade -y</code></pre></div>
 <h2 id="installing-git-and-nginx">Installing git and nginx</h2>
 <p>We will need git, as well as nginx for the later part of this tutorial, so let’s install them also:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get install nginx
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get install nginx
 $ sudo apt-get install git</code></pre></div>
 <h2 id="installing-docker">Installing Docker</h2>
 <p>Plausible uses many open source packages, but luckily, it makes it easy for us to set it up by using Docker.</p>
 <p>To install Docker, we first need to add its official GPG key, and set up the stable repository:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 $ echo <span style="color:#e6db74">&#34;deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu focal stable&#34;</span> | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null</code></pre></div>
 <p><strong>Note:</strong> You might notice the word focal in the last command, which is the code name of the previous Ubuntu version – Ubuntu 20.04. That’s because the team from Docker doesn’t update their packages immediately after a new distro release. Don’t worry, most of the time everything will work with the packages from the previous Ubuntu version.</p>
 <p>Now, we run the update once more, and run the installation of Docker’s packages:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get update
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get update
 $ sudo apt-get install docker-ce docker-ce-cli docker-compose containerd.io</code></pre></div>
 <h2 id="cloning-plausible">Cloning Plausible</h2>
 <p>Navigate to the root nginx directory, clone Plausible, and switch to its directory:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd /var/www
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd /var/www
 $ git clone https://github.com/plausible/hosting
 $ cd hosting</code></pre></div>
 <h2 id="configuration">Configuration</h2>
 <p>Inside the Plausible directory, there is only one file that we will want to edit – <strong>plausible-conf.env</strong></p>
 <p>Inside of the <strong>plausible-conf.env</strong> you will find the following:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ADMIN_USER_EMAIL<span style="color:#f92672">=</span>replace-me
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ADMIN_USER_EMAIL<span style="color:#f92672">=</span>replace-me
 ADMIN_USER_NAME<span style="color:#f92672">=</span>replace-me
 ADMIN_USER_PWD<span style="color:#f92672">=</span>replace-me
 BASE_URL<span style="color:#f92672">=</span>replace-me
 SECRET_KEY_BASE<span style="color:#f92672">=</span>replace-me</code></pre></div>
 <p>These are the minimum variables that you need to fill for Plausible to work, but we will add some more.</p>
 <p>One thing you’ll need to generate is the secret key, which you can do by running the following command, which will output a random string 64 characters long:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ openssl rand -base64 <span style="color:#ae81ff">64</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ openssl rand -base64 <span style="color:#ae81ff">64</span></code></pre></div>
 <p>Take a look at the example of the fully filled plausible-conf.env. You will need to replace the values shown with your own values:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ADMIN_USER_EMAIL<span style="color:#f92672">=</span>admin@example.com <span style="color:#75715e">#replace with your email (should be working one)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ADMIN_USER_EMAIL<span style="color:#f92672">=</span>admin@example.com <span style="color:#75715e">#replace with your email (should be working one)</span>
 ADMIN_USER_NAME<span style="color:#f92672">=</span>admin <span style="color:#75715e">#name it anyway you want</span>
 ADMIN_USER_PWD<span style="color:#f92672">=</span>adm1nPassword123 <span style="color:#75715e">#the stronger, the better</span>
 BASE_URL<span style="color:#f92672">=</span>https://analytics.example.com <span style="color:#75715e">#this is your URL, use the domain attached to this instance&#39;s IP, must start with http/https</span>
@@ -229,13 +229,13 @@ SMTP_RETRIES<span style="color:#f92672">=</span><span style="color:#ae81ff">3</s
 <p>Once you populated your <strong>plausible-conf.env</strong> file, save it with your favorite editor. We are now ready to launch Plausible.
 Running Plausible</p>
 <p>This is simple, just run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose up --detach</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-compose up --detach</code></pre></div>
 <p>Before we can open our browser, and check our new shiny analytics suite, we must first take care of our domain and the proxy.
 Set up nginx reverse proxy</p>
 <p>Open up the following file with your favorite editor, for example nano, like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo nano /etc/nginx/sites-enabled/default</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo nano /etc/nginx/sites-enabled/default</code></pre></div>
 <p>Change the contents of the file, so it looks like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">server <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">server <span style="color:#f92672">{</span>
     listen <span style="color:#ae81ff">80</span> default_server;
     listen <span style="color:#f92672">[</span>::<span style="color:#f92672">]</span>:80 default_server;
 
@@ -251,24 +251,24 @@ Set up nginx reverse proxy</p>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 <p>Save the file, and restart the nginx service:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo service nginx restart</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo service nginx restart</code></pre></div>
 <h2 id="install-ssl-certificate">Install SSL certificate</h2>
 <p>Because we added the https prefix in the Plausible configuration file, going to our domain right now will return 502 – Bad Gateway. To make it running, there’s only one step left – installing the SSL certificate.</p>
 <p>Fortunately, with LetsEncrypt it’s really easy!</p>
 <p>Run the following commands to install certbot:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo snap install core; sudo snap refresh core
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo snap install core; sudo snap refresh core
 $ sudo snap install --classic certbot
 $ sudo ln -s /snap/bin/certbot /usr/bin/certbot</code></pre></div>
 <p>After the certbot is installed, run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo certbot --nginx</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo certbot --nginx</code></pre></div>
 <p>You will be presented with a prompt that will ask you to enter your email address, accept the terms and choose the domain (the one you entered in the nginx config will be displayed).</p>
 <p>After that is done, let’s restart the nginx once more:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo service nginx restart</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo service nginx restart</code></pre></div>
 <h2 id="first-login-to-plausible">First Login to Plausible</h2>
 <p>Congratulations! Everything is ready! Open up your browser and navigate to <strong>https<a href=""></a>://analytics.example.com</strong>.</p>
 <p>You will see a login screen. Enter the details you have provided in the Plausible configuration file. After that, you will receive a confirmation email you also typed in there.</p>
 <p>If for some reason you don’t receive the email, and you’re sure you entered the correct SMTP settings previously – don’t worry, we can activate the user running the following command in the root directory of Plausible on our server:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker exec hosting_plausible_db_1 psql -U postgres -d plausible_db -c <span style="color:#e6db74">&#34;UPDATE users SET email_verified = true;&#34;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker exec hosting_plausible_db_1 psql -U postgres -d plausible_db -c <span style="color:#e6db74">&#34;UPDATE users SET email_verified = true;&#34;</span></code></pre></div>
 <p>You are now ready to use all the features that Plausible offers. For information about using the suite, check out the <a href="https://plausible.io/docs" target="_blank">Plausible official documentation</a>.</p>
 </div>
         <div class="post-footer">
@@ -287,7 +287,7 @@ $ sudo ln -s /snap/bin/certbot /usr/bin/certbot</code></pre></div>
 </div>
 
 <script type="text/javascript"
-        src="/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js"
+        src="/js/medium-zoom.min.83cb1dd5fea8d42d87d1e601a07faa73089ad0ef9ccfe5daf6041289ebcc4e46.js"
         ></script></body>
 
 </html>
