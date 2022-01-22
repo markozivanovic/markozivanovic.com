@@ -21,4 +21,6 @@ Once, in what is now a distant past, I was gullible enough to believe the conten
 
 Then, I would come to a chapter that made no sense to me at all. It's like the author went from some basic arithmetic to a deep dive into complex topics on the mysteries of the universe. At that point, I would get frustrated. I would ask myself if I'm dumb. Stubborn as I am, I would spend hours reading other sources on the subject and then return to the book to prove that I could master the topic and finish the freaking thing.
 
+{{< figure src="/images/dumbhomer.jpeg" alt="Homer feeling dumb" >}}
+
 I don't think it should be like that. It would help if you were honest about the level of knowledge that your readers should have before explaining some concepts to them. Dear publishers, rethink how you're writing the **"Who this book is for"** chapter. You may lose some readers, but the ones you'll get will be grateful for not feeding them bullshit.
